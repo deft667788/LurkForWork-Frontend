@@ -1,8 +1,8 @@
-import { BACKEND_PORT } from "./config.js";
 import { useGo } from "./route.js";
-import { useMessage, useLoading } from "./utils.js";
+import { useLoading, useMessage } from "./utils.js";
 
-let baseURL = "http://127.0.0.1:" + BACKEND_PORT;
+//  let baseURL = "http://127.0.0.1:" + BACKEND_PORT;
+let baseURL = "https://lurkforwork-backend-8z6r.onrender.com";
 
 // Encapsulate the logic of sending HTTP requests
 export default function request(url, params, config) {
